@@ -1,0 +1,26 @@
+<!-- Action: Apply this to the main page -->
+<form class="" action="/<%= @post[:id] %>" method="post">
+
+  <div class="">
+    <label>Title</label><br>
+    <input type="text" name="title" value="<%= @post[:title] %>">
+  </div>
+  <br>
+
+  <div class="">
+    <label>Body</label><br>
+    <textarea type="text" name="body"><%= @post[:body] %></textarea>
+  </div>
+  <br>
+
+  <div class="">
+    <input type="submit" name="" value="Save Post">
+  </div>
+
+  <!-- Uses Rack::MethodOverride to override any methods and instead make them put/patch (edit) and replace the old one -->
+  <!-- Perform the put method on this root -->
+  <% if @post[:id] != "" %>
+    <input type="hidden" name="_method" value="put">
+  <% end %>
+
+</form>

@@ -1,0 +1,20 @@
+.redborder{
+  border: 1px solid red;
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+}
+
+.fadein: {
+  opacity: 1.0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: slategrey;
+}

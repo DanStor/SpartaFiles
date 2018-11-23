@@ -1,0 +1,24 @@
+.phone {
+  display: none;
+}
+
+.background {
+  background-color: #fafafa;
+}
+
+.login {
+  text-align: center;
+}
+
+.form {
+  float: right;
+}
+
+@media screen and (min-width: 620px ){
+  /* Do Stuff */
+  .phone {
+    display: block;
+    margin: auto;
+    float: left;
+  }
+}

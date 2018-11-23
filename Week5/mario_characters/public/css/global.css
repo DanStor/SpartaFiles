@@ -1,0 +1,11 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  background-color: #fafafa;
+}
+
+a:hover {
+  text-decoration: none;
+}

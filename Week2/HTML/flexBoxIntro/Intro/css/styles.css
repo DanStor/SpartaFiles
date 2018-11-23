@@ -1,0 +1,30 @@
+*{
+  background-color: grey;
+}
+
+.content{
+  background-color: orange;
+  height: 100px;
+  margin: 5px;
+  padding: 100px;
+}
+
+.flex-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container2 {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  flex: 1;
+}
+
+.box2, .box3 {
+  flex: 4;
+}

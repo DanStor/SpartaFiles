@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eng16 BlogSite</title>
+    <link rel="stylesheet" href=<%= url("/css/global.css") %>>
+  </head>
+  <body>
+
+    <!-- Put the nav.erb file from partials from here -->
+    <%= erb :"partials/nav" %>
+    <!-- Put the nav.erb file from partials to here -->
+
+    <!-- Put whatever webpage has just been loaded from here -->
+    <%= yield %>
+    <!-- Put whatever webpage has just been loaded to here -->
+
+  </body>
+</html>

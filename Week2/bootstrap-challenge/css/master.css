@@ -1,0 +1,52 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.redbox {
+  border: 1px solid red;
+}
+
+footer {
+  background-color: grey;
+  padding: 2em;
+}
+
+.footer-options {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* li {
+  padding: 0px 20px;
+} */
+
+.card > img {
+  opacity: 0.85;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+.color1 {
+  color: #130303;
+}
+
+.color2 {
+  background-color: #2D080A;
+}
+
+.color3 {
+  color: #7C3626;
+}
+
+.color4{
+  background-color: #F5853F;
+}
+
+.color5{
+  background-color: #FFCDBC;
+}

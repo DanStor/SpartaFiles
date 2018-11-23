@@ -1,0 +1,48 @@
+nav {
+  background-color: black;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+body {
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: silver;
+}
+
+a:active {
+  color: white;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.padding-cascade {
+  padding-top: 5%;
+}
+
+#logo {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+#headshot {
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+  width: 75%;
+}

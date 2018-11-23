@@ -1,0 +1,40 @@
+<%= form_for @product do |p| %>
+
+  <% if product.errors.any? %>
+
+    <h2><%= pluralize(product.errors.count, 'error') %> to fix</h2>
+
+    <% product.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+
+  <% end %>
+  <br>
+  <div class="field">
+    <%= p.label :name %>
+    <br>
+    <%= p.text_field :name %>
+  </div>
+  <br>
+  <div class="field">
+    <%= p.label :price %>
+    <br>
+    <%= p.text_field :price %>
+  </div>
+  <br>
+  <div class="field">
+    <%= p.label :stock %>
+    <br>
+    <%= p.text_field :stock %>
+  </div>
+  <br>
+  <div class="field">
+    <%= p.label :description %>
+    <br>
+    <%= p.text_area :description %>
+  </div>
+  <br>
+  <div>
+    <%= p.submit %>
+  </div>
+<% end %>

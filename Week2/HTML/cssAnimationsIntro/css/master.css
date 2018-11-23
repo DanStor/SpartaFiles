@@ -1,0 +1,61 @@
+.ball {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+}
+
+.ball:hover {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.ball:active {
+  background-color: hotpink;
+  width: 300px;
+  height: 300px;
+}
+
+.input-field:focus {
+  background-color: black;
+  color: white;
+}
+
+@keyframes color-change {
+  0% {background-color: blue;}
+  50% {background-color: yellow;}
+  100% {background-color: red;}
+}
+
+.box {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.box:hover {
+  cursor: crosshair;
+}
+
+.animation1 {
+  animation-name: color-change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animation2 {
+  animation: movement 3s infinite alternate, color-change 10s infinite alternate;
+  /* animation-direction: alternate; */
+}
+
+@keyframes movement {
+  from{left: 5%;}
+  to{left: 90%;}
+}
+
+@keyframes size {
+  
+}

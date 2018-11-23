@@ -1,0 +1,12 @@
+<h1>Product Catalogue</h1>
+<% @products.each do |product| %>
+<hr>
+  <div class="">
+    <!-- <img src="" alt=""> -->
+    <!-- 'product' at end is equivalient to 'show_product_path' -->
+    <h2><%= link_to "#{product.name}", product %></h2>
+    <%= image_tag "#{product.picture}" %>
+    <p><%= truncate(product.description, :length => 50) %></p>
+    <p>£<%= product.price %></p>
+  </div>
+<% end %>

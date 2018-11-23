@@ -1,0 +1,15 @@
+<%= form_for [@post, comment] do |c| %>
+  <div class="field">
+    <%= c.label :body %>
+    <br>
+    <%= c.text_area :body %>
+    <br>
+    <%= c.label :author %>
+    <br>
+    <%= c.text_field :author %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= c.submit %>
+  </div>
+<% end %>

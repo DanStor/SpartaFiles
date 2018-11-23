@@ -1,0 +1,18 @@
+<form class="" action="/<%= @animal.id %>" method="post">
+  <div class="">
+    <label>Name</label><br>
+    <input type="text" name="name" value="<%= @animal.name %>">
+  </div>
+  <br>
+
+  <div>
+    <label>Fact</label><br>
+    <textarea type="text" name="fact"><%= @animal.fact %></textarea>
+  </div>
+
+  <input type="submit" name="" value="Add Animal">
+
+  <% if @animal.id %>
+    <input type="hidden" name="_method" value="put">
+  <% end %>
+</form>

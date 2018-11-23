@@ -1,0 +1,41 @@
+<form class="" action="/<%= @hero.id %>" method="post">
+
+  <div class="">
+    <label>Name</label><br>
+    <input type="text" name="name" value="<%= @hero.name %>">
+  </div>
+  <br>
+
+  <div class="">
+    <label>Info</label><br>
+    <textarea name="fact" type="text"><%= @hero.fact %></textarea>
+  </div>
+  <br>
+
+  <div class="">
+    <label>Alignment</label><br>
+    <input name="alignment" type="text" value="<%= @hero.alignment %>">
+  </div>
+  <br>
+
+  <div class="">
+    <label>Image Ref</label><br>
+    <textarea name="image" type="text"><%= @hero.image %></textarea>
+  </div>
+  <br>
+
+  <div class="">
+    <label>Image Alt</label><br>
+    <textarea name="img_alt" type="text"><%= @hero.img_alt %></textarea>
+  </div>
+  <br>
+
+  <div class="">
+    <input type="submit" name="" value="Save Post">
+  </div>
+
+  <% if @hero.id %>
+    <input type="hidden" name="_method" value="put">
+  <% end %>
+
+</form>
